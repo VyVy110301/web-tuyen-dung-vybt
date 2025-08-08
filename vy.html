@@ -1,0 +1,211 @@
+<html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Hàng Nặng - Tuyển Dụng</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for a modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #4ade80, #38bdf8);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-black text-blue-600">
+                Giao Hàng Nặng
+            </a>
+            <div class="hidden md:flex space-x-6 text-lg font-semibold">
+                <a href="#positions" class="hover:text-blue-600 transition duration-300">Vị trí tuyển dụng</a>
+                <a href="#about" class="hover:text-blue-600 transition duration-300">Thông tin công ty</a>
+                <a href="#support" class="hover:text-blue-600 transition duration-300">Hỗ trợ</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-4">
+            <a href="#positions" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">Vị trí tuyển dụng</a>
+            <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">Thông tin công ty</a>
+            <a href="#support" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">Hỗ trợ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                        <span class="text-gradient">Làm chủ cuộc sống</span>,
+                        kiếm tiền khủng cùng <span class="text-blue-600">Giao Hàng Nặng</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8">
+                        Đến với Giao Hàng Nặng, bạn không chỉ có một công việc, mà có một bệ phóng sự nghiệp vững chắc.
+                    </p>
+                    <a href="#positions" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                        Ứng tuyển ngay!
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <!-- Placeholder for a cool illustration or image -->
+                    <img src="https://placehold.co/600x400/38bdf8/ffffff?text=Cool+Illustration" alt="Hình ảnh minh họa" class="rounded-3xl shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Positions Section -->
+        <section id="positions" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-black text-center mb-12">
+                    Vị Trí Tuyển Dụng
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Job Card 1 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-3xl mb-4">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Nhân viên giao hàng xe tải</h3>
+                        <p class="text-gray-600 mb-6">
+                            Lái xe, giao hàng, làm chủ mọi tuyến đường. Lương cứng + thưởng, thu nhập khủng.
+                        </p>
+                        <a href="mailto:vybt@ghn.vn" class="text-blue-600 font-semibold hover:underline">
+                            Ứng tuyển ngay <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Job Card 2 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mb-4">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Nhân viên xử lý hàng hóa</h3>
+                        <p class="text-gray-600 mb-6">
+                            Đảm bảo hàng hóa đến tay khách hàng nhanh chóng và an toàn. Môi trường làm việc năng động.
+                        </p>
+                        <a href="mailto:vybt@ghn.vn" class="text-green-600 font-semibold hover:underline">
+                            Ứng tuyển ngay <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Job Card 3 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl mb-4">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Nhân viên đóng gói</h3>
+                        <p class="text-gray-600 mb-6">
+                            Đóng gói hàng hóa chuyên nghiệp, đảm bảo chất lượng. Phù hợp với các bạn trẻ tỉ mỉ, cẩn thận.
+                        </p>
+                        <a href="mailto:vybt@ghn.vn" class="text-yellow-600 font-semibold hover:underline">
+                            Ứng tuyển ngay <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-black text-center mb-12">
+                    Về Giao Hàng Nặng
+                </h2>
+                <div class="max-w-4xl mx-auto text-center text-lg md:text-xl text-gray-700 space-y-6">
+                    <p>
+                        Giao Hàng Nặng không chỉ là một công ty vận chuyển, mà là một cộng đồng của những người trẻ năng động, nhiệt huyết. Chúng tôi tin rằng mỗi gói hàng được giao đi không chỉ là sản phẩm, mà còn là niềm tin và sự hài lòng của khách hàng.
+                    </p>
+                    <p>
+                        Với Giao Hàng Nặng, bạn sẽ được làm việc trong môi trường chuyên nghiệp, được đào tạo bài bản và có cơ hội thăng tiến rõ ràng. Chúng tôi cam kết mang lại mức thu nhập cạnh tranh, chính sách phúc lợi tốt và một tinh thần đồng đội vững mạnh.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-black text-center mb-12">
+                    Hỗ Trợ & Liên Hệ
+                </h2>
+                <div class="max-w-xl mx-auto p-8 bg-white rounded-2xl shadow-xl text-center">
+                    <p class="text-lg md:text-xl text-gray-700 mb-6">
+                        Bạn có câu hỏi hoặc muốn ứng tuyển ngay? Đừng ngần ngại liên hệ với chúng tôi!
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-center">
+                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:vybt@ghn.vn" class="text-lg md:text-xl font-semibold text-blue-600 hover:underline">vybt@ghn.vn</a>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:0933290309" class="text-lg md:text-xl font-semibold text-green-600 hover:underline">0933290309</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in text-2xl"></i></a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Giao Hàng Nặng. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
